@@ -3,7 +3,7 @@ import * as yup from 'yup'
 const formSchema = yup.object().shape({
   name: yup
     .string()
-    .max(12, "Name must be under 10 characters")
+    .max(15, "Name must be under 15 characters")
     .required("Name is required"),
   size: yup
     .string()
