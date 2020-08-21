@@ -7,7 +7,7 @@ margin: 0 auto;
 text-align: center;
 padding: 2rem;
 border: 5px solid black;
-margin-top: 5rem;
+margin-top: 3rem;
 #Error{
     color:red;
     padding: 0;

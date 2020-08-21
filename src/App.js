@@ -30,6 +30,7 @@ div{
 `
 const PizzaImg = Styled.img`
 width: 100%;
+height: 75vh;
 `
 const LogoImg = Styled.img `
 height: 3.5rem;
@@ -64,7 +65,6 @@ const initialFormValues = {
     mushroom: false,
     pineapple: false,
     greenpeppers: false,
-
   },
   specialOrder: ''
 }
