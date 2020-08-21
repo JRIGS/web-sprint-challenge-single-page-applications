@@ -31,6 +31,12 @@ div{
 const PizzaImg = Styled.img`
 width: 100%;
 `
+const LogoImg = Styled.img `
+height: 3.5rem;
+width: 3.5rem;
+padding: 2rem;
+`
+
 const OrderBtnDiv = Styled.div`
 display: flex;
 justify-content: center;
@@ -38,7 +44,7 @@ text-decoration: none;
 `
 const OrderBtn = Styled.button`
 margin-top: 2rem;
-padding: 2rem 4rem;
+padding: 1rem 2rem;
 background-color: black;
 font-size: 2rem;
 color:white;
@@ -139,6 +145,7 @@ useEffect(() => {
     <div className='App'>
 
       <Nav>
+      <LogoImg src={require('./Assets/Lambda_Logo.png')} ></LogoImg>
       <h1>Lambda Eats</h1>
         <div>
           <Link to='/'>

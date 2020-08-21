@@ -27,7 +27,7 @@ describe('Pizza App', () => {
             cy.url().should('include', 'localhost')
           })
 
-          it('can click the button to order a new pizza', () => {
+          it('can click the button to order a new pizza and navigate to /pizza form', () => {
             cy.get('#pizzaForm').click()
           })
         
@@ -85,19 +85,17 @@ describe('Pizza App', () => {
           cy.get(".errors").should('be.visible')
           cy.reload()
       })
-
-      describe('Can navigate back home', () => {
-          it('can navigate to http://localhost:3000/pizza', () => {
-            cy.visit('http://localhost:3000/pizza')
-            cy.url().should('include', 'localhost')
-          })
-
-          it('navigate back to home', () => {
-            cy.get('#homeBtn').click()
-          })
-          
-        })
-        
+      
+    })
+          describe('Can navigate back home', () => {
+              it('can navigate to http://localhost:3000/pizza', () => {
+                cy.visit('http://localhost:3000/pizza')
+                cy.url().should('include', 'localhost')
+              })
+    
+              it('navigate back to home', () => {
+                cy.get('#homeBtn').click()
+              })
         
     })
 

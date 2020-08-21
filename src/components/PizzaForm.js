@@ -45,8 +45,8 @@ const Pizza = (props) => {
 
     return (
         <FormDiv>     
-
-            <h2>Build Your Own Pizza</h2>
+            
+            <h2>Build Your Own Pizza!</h2>
             <div className='errors'>
                 <div id='Error'>{errors.name}</div>
             </div>
@@ -56,7 +56,7 @@ const Pizza = (props) => {
                     <input
                     type='text'
                     value={values.name}
-                    placeholder='Enter name'
+                    placeholder='Type here...'
                     name='name'
                     onChange={onInputChange}
                     >
@@ -208,7 +208,7 @@ const Pizza = (props) => {
                 <label>Any special instructions?<br></br>
                     <input
                     type='text'
-                    placeholder="Anything else?"
+                    placeholder="Type here..."
                     name='specialOrder'
                     onChange={onInputChange}
                     value={values.special}>
