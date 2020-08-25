@@ -14,9 +14,9 @@ margin-top: 3rem;
 }
 
 `
-// label{
-//     padding: 1rem;
-// }
+    // label{
+    //     padding: 1rem;
+    // }
 
 const Pizza = (props) => {
     const {
